@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/unpkg.com_swiper@8.2.4_swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+    <title>Landing page</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav-logo">
+                <i class="ri-restart-line"></i>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link" >
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#wanita" class="nav-link">
+                            <span>Women</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pria" class="nav-link">
+                            <span>Men</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+
+
+
+
+<!-- ============================ DALILAH ============================= -->
+        <section class="home section" id="home">
+            <div class="pos">
+                <img src="img/navbar.png" alt="" class="garis">
+                </div>
+            <div class="home-container container grid">
+                <div class="home-data">
+                    <h1 class="home-title" style="font-family: 'Courgette', cursive; color: rgb(185, 167, 94);">
+                        Classy Clothing <br>
+                        Collection
+                    </h1>
+
+                    <p class="home-description" >
+                        This page features models with cool and classy clothes <br>
+                        with an unique style ^^ 
+                    </p>
+
+                    <a href="#pria" class="button-link">
+                        Let's explore this page <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="home-images">
+                    <img src="img/cewe1.jpg" alt="" onmouseenter="random_img_wanita()" id="change_img_wanita">
+                    <img src="img/cowo.jpg" alt="" onmouseenter="random_img_pria()" id="change_img_pria">
+                </div>
+            </div>
+            <div class="cursor"></div>
+        </section>
+
+
+
+
+
+
+
+        <!-- <div class="new-bg"> -->
+        <section class="new section new-bg">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <h2 class="section-title gold-text">
+                Gender
+            </h2>
+
+            <div class="new-container container grid" >
+
+                <article class="new-card card1" onmouseenter="genderBg_pria()">
+                    <img src="img/modelP.jpeg" alt="" class="new-img">
+
+                    <a href="#pria" class="new-link">
+                        <div class="new-data gold-text">
+                            <h2 class="new-title gold-text">
+                                Men
+                            </h2>
+                            <span class="new-subtitle">
+                                Clothes Collection
+                            </span>
+                        </div>
+
+                        <i class="ri-arrow-right-line gold-text"></i>
+                    </a>
+                </article>
+
+                <article class="new-card card2" onmouseenter="genderBg_wanita() ">
+                    <img src="img/modelC.jpg" alt="" class="new-img">
+
+                    <a href="#wanita" class="new-link">
+                        <div class="new-data">
+                            <h2 class="new-title gold-text">
+                                Women
+                            </h2>
+                            <span class="new-subtitle gold-text">
+                                Clothes Collection
+                            </span>
+                        </div>
+
+                        <i class="ri-arrow-right-line gold-text"></i>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+    <!-- </div> -->
+<!-- ============================ DALILAH ============================= -->
+
+
+
+
+
+<!-- ============================ WIDI ============================= -->
+        <section class="products section" id="wanita">
+            <div class="pos">
+                <img src="pemisah.png" alt="" class="garis">
+            </div>
+
+            <h2 class="section-title">
+                Women
+            </h2>
+
+            <div class="products-container container swiper">
+                <div class="swiper-wrapper">
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/1.cewe.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Kaos
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 100.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/2.cewe.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Kemeja
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 150.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/3.cewe.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Blazer
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 350.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/4.cewe.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Turtleneck
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 150.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/5.cewe.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Sweater
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 200.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/6.cewe.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Hoodie
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 200.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/7.cewe.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Cardigan
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 150.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/8.cewe.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Vest
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 100.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/9.cewe.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Tunik
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 175.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/10.cewe.png" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Dress
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 250.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/11.cewe.jpg" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Overall
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 300.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/12.cewe.jpg" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Rok
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 150.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/13.cewe.jpg" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Kulot
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 125.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/14.cewe.jpg" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Cargo Pants
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 250.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/15.cewe.jpg" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Kerudung
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 80.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/16.cewe.jpg" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Tas
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 250.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/17.cewe.jpg" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Sendal
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 200.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/18.cewe.jpg" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Sepatu
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 250.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/19.cewe.jpg" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Perhiasan
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 800.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide ">
+                        <img src="img/20.cewe.jpg" alt="" class="products-img data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                        <h2 class="products-title">
+                            Topi 
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 75.000
+                        </span>
+                    </article>
+
+                </div>
+
+                <div class="swiper-button-next">
+                    <!-- <i class="ri-arrow-right-line"></i> -->
+                </div>
+                <div class="swiper-button-prev">
+                    <!-- <i class="ri-arrow-left-line"></i> -->
+                </div>
+            </div>
+        </section>
+<!-- ============================ WIDI ============================= -->
+
+
+
+
+<div class="custom-shape-divider-top-1686879722">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+
+
+
+
+<!-- ============================ ADI ============================= -->
+        <section class="products section" id="pria">
+
+            <h2 class="section-title">
+                Men
+            </h2>
+
+            <div class="products-container container swiper">
+                <div class="swiper-wrapper">
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/6.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Hoodie Polos Hitam
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 250.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/7.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Jas Hitam Formal
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 350.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/2.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Celana Jeans
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 125.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/8.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Crewneck Turtle
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 175.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/10.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Kaos Polos Oversize
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 125.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/11.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Hoodie Crewneck
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 150.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/14.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Sepatu Fashion
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 200.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/15.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Jaket Denim
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 250.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/16.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Outer Rompie
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 175.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/17.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Kacamata Fashion
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 100.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/18.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Jaket Bomber
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 250.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/19.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Sandal Selop
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 100.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/celanaP.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Celana Pendek
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 125.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/tas.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Backpack 
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 200.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/cargo.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Celana Cargo
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 125.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/sepatu.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Sepatu Pentopel Resmi
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 300.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/jaket.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Jaket Zipper
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 200.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/polo.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Polo Shirt
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 150.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/topi.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Topi Baseball
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 75.000
+                        </span>
+                    </article>
+
+                    <article class="products-card swiper-slide">
+                        <img src="img/jogger.jpg" alt="" class="products-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h2 class="products-title">
+                            Celana Jogger
+                        </h2>
+                        <span class="products-price">
+                            Mulai dari Rp. 125.000
+                        </span>
+                    </article>
+
+                </div>
+
+                <div class="swiper-button-next">
+                </div>
+                <div class="swiper-button-prev">
+                </div>
+            </div>
+        </section>
+
+<!-- ============================ ADI ============================= -->
+
+    </main>
+    
+    <div class="custom-shape-divider-top-1686878479">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+
+<!-- ============================ DALILAH ============================= -->
+    <footer class="footer section gold-text">
+
+        <div class="footer-container container grid">
+            <div>
+                <a href="" class="footer-logo" style="color: gold;">
+                    Shop
+                </a>
+
+                <p class="footer-description">
+                    Scroll this page to see the others cute clothes <br>
+                    with the price and click to buy it  <br>
+                    Let's Shoppingg <(^3^)>
+                </p>
+            </div>
+
+            <div class="footer-content">
+
+                <div>
+                    <h3 class="footer-content" style="color: gold;">
+                        Office
+                    </h3>
+
+                    <p class="footer-information">
+                        weekday : 9am - 9pm <br>
+                        weekend : 10am - 11pm
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer-title" style="color: gold;">
+                        Contact Us
+                    </h3>
+
+                    <ul class="footer-social">
+                        
+                            <a href="https://web.facebook.com/" class="footer-social-link" target="_blank">
+                                <i class="ri-facebook-fill gold-text"></i>
+                            </a>
+                        
+                            <a href="https://www.instagram.com/" class="footer-social-link" target="_blank">
+                                <i class="ri-instagram-line gold-text"></i>
+                            </a>
+                        
+                            <a href="https://www.whatsapp.com/" class="footer-social-link" target="_blank">
+                                <i class="ri-whatsapp-line gold-text"></i>
+                            </a>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-info container">
+            <span class="footer-copy" style="color: gold;">
+                &#169; Powered by: Kelompok 17
+            </span>
+
+            <a href="" class="footer-privacy" style="color: gold;">
+                Landing Page
+            </a>
+        </div>
+    </footer>
+<!-- ============================ DALILAH ============================= -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <p>Colors</p>
+            <select class="form-select" aria-label="Default select example">
+                <option value="1" selected>Black</option>
+                <option value="2">White</option>
+                <option value="3">Yellow</option>
+            </select>
+            <br>
+            <p>Size</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="M(); hapus()">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  M
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked onclick="L(); hapus()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  L
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked onclick="XL(); hapus()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  XL
+                </label>
+            </div>
+                
+            
+        </div>
+        <P id="hargaM" class="harga"></P>
+        <P id="hargaL" class="harga"></P>
+        <P id="hargaXL" class="harga">Rp Z</P>
+        <div class="modal-footer ">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/scrollReveal.js"></script>
+  <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+  </a>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="js/unpkg.com_swiper@8.2.4_swiper-bundle.min.js"></script>
+</body>
+
+</html>
